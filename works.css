@@ -1,0 +1,172 @@
+body{
+    margin: 0;
+    background-color: rgb(193, 237, 177);
+}
+.navbar{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    border-bottom:10px solid red;
+}
+.navbar-img{
+    height: 50px;
+}
+.navbar-left{
+    margin-top: 1%;
+    background-color: black;
+    display: flex;
+    float: left;
+    padding: 5px;
+}
+.navbar-img-two{
+    height: 70px;
+}
+.navbar-right{
+    background-color: black;
+    float:right;
+}
+.navbar-right ul{
+    background-color: black;
+    display: flex;
+    padding: 0px;
+}
+.navbar-right ul li{
+    background-color: black;
+}
+.navbar-right a{
+    font-family: 'Architects Daughter';
+    font-weight: bolder;
+    font-size: 25px;
+    color:rgb(168, 168, 78);
+    text-decoration: none;
+    list-style-type: none;
+    margin-right: 50px;
+}
+#hamburger-menu{
+    display: none;
+}
+.mobile-menu {
+    display: none;
+    background-color: rgb(55, 54, 54);
+    color: rgb(168, 168, 78);
+    position: absolute;
+    top: 55px;
+    z-index: 1;
+    width: 100%;
+}
+
+.mobile-menu.active {
+    display: block;
+}
+
+.mobile-menu ul {
+    margin-left: 20px;
+    list-style-type:disc;
+    padding: 0;
+}
+
+.mobile-menu li {
+    margin: 10px 0;
+}
+
+.mobile-menu a {
+    text-decoration: none;
+    color: rgb(168, 168, 78);
+    font-weight: bold;
+    font-family: 'Architects Daughter';
+    cursor: pointer;
+}
+
+.mobile-menu a:hover, .mobile-menu li:hover{
+    color:white;
+}
+
+
+@media screen and (max-width: 767px) {
+    .navbar{
+        width: 100%;
+        height: 50px;
+        background-color: black;
+        border-bottom:5px solid red;
+        display: flex;
+        justify-content: space-around;
+    }
+    .navbar-img{
+        height: 30px;
+    }
+    .navbar-left{
+        display: flex;
+        float: left;
+        padding: 5px;
+    }
+    .navbar-img-two{
+        height: 30px;
+    }
+    .navbar-right{
+        display: none;
+    }
+    #hamburger-menu{
+        background-color: black;
+        display: inline;
+        color:rgb(168, 168, 78);
+        margin-top: 15px;
+        cursor: pointer;
+    }
+    #hamburger-menu i{
+        background-color: black;
+    }
+    #hamburger-menu:hover{
+        color:white;
+    }
+    .mobile-menu.active, .mobile-menu li, .mobile-menu a {
+        background-color:rgb(55, 54, 54);
+    }
+}
+
+.theHeading{
+    margin-top: 1%;
+    text-align: center;
+    color: rgb(30, 55, 35);
+    font-family:monospace;
+    text-decoration: underline;
+    font-size: 2.8rem;
+    margin-bottom: 50px;
+}
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 30px; 
+    max-width: 750px; 
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
+
+.work-grid-item {
+    border: 5px solid rgba(21, 47, 1, 0.447);
+    width: 250px; 
+    height: 250px; 
+    overflow: hidden; 
+}
+
+
+@media screen and (max-width: 767px) {
+    .theHeading{
+        font-size: smaller;
+        margin-bottom: 10px;
+    }
+    .work-grid {
+        grid-template-columns: repeat(1, 1fr);
+        max-width: none; 
+    }
+    .work-grid-item{
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+    }
+}
+.work-grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}

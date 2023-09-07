@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Painter's Web</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Inter:wght@200;300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="index.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-left">
+        <img class="navbar-img" src="./images/logo.jpeg" alt="72Dragons-logo" />
+        <img class="navbar-img-two" src="./images/text-logo.png" alt="72Dragons-text-logo" />
+        </div>
+        <div class="navbar-right">
+            <ul>
+                <a href="about.html" target="_blank"><li>About</li></a>
+                <a href="works.html" target="_blank"><li>Works</li></a>
+            </ul>
+        </div>
+            <a href="javascript:void(0);" class="icon" id="hamburger-menu" onclick="toggleMobileMenu()">
+                <i class="fa fa-bars"></i>
+              </a>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+        <ul>
+            <li><a href="./about.html" target="_blank">About</a></li>
+            <li><a href="./works.html" target="_blank">Works</a></li>
+        </ul>
+    </div>
+    <div class="home-one">
+        <span class="home-span">Welcome to A Painter's Web!</span>
+    </div>
+    <div class="home-two">
+        <h2>Currently Popular Works</h2>
+<section class="home-section-grid">
+    <a href="workItem.html" alt="work-item" target="_blank"><img src="./images/home-grid-one.jpeg" alt="image" class="section-grid"/></a>
+    <a href="workItem.html" alt="work-item" target="_blank"><img src="./images/home-grid-two.jpeg" alt="image" class="section-grid"/></a>
+    <a href="workItem.html" alt="work-item" target="_blank"><img src="./images/home-grid-three.jpeg" alt="image" class="section-grid"/></a>
+</section>
+<a class="home-two-a" href="./works.html" target="_blank">View all works</a>
+    </div>
+    <div class="home-three">
+       <a href="./about.html" target="_blank">About Us</a>
+    </div>
+</body>
+</html>

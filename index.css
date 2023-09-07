@@ -1,0 +1,229 @@
+body{
+    margin: 0;
+}
+.navbar{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    border-bottom:10px solid red;
+}
+.navbar-img{
+    height: 50px;
+}
+.navbar-left{
+    display: flex;
+    float: left;
+    padding: 20px;
+}
+.navbar-img-two{
+    height: 70px;
+}
+.navbar-right{
+    float:right;
+}
+.navbar-right ul{
+    display: flex;
+    padding: 20px;
+}
+.navbar-right a{
+    font-family: 'Architects Daughter';
+    font-weight: bolder;
+    font-size: 25px;
+    color:rgb(168, 168, 78);
+    text-decoration: none;
+    list-style-type: none;
+    margin-right: 50px;
+}
+#hamburger-menu{
+    display: none;
+}
+.mobile-menu {
+    display: none;
+    background-color: rgb(55, 54, 54);
+    color: rgb(168, 168, 78);
+    position: absolute;
+    top: 55px;
+    z-index: 1;
+    width: 100%;
+}
+
+.mobile-menu.active {
+    display: block;
+}
+
+.mobile-menu ul {
+    margin-left: 20px;
+    list-style-type:disc;
+    padding: 0;
+}
+
+.mobile-menu li {
+    margin: 10px 0;
+}
+
+.mobile-menu a {
+    text-decoration: none;
+    color: rgb(168, 168, 78);
+    font-weight: bold;
+    font-family: 'Architects Daughter';
+    cursor: pointer;
+}
+
+.mobile-menu a:hover, .mobile-menu li:hover{
+    color:white;
+}
+
+
+@media screen and (max-width: 767px) {
+    .navbar{
+        width: 100%;
+        height: 50px;
+        background-color: black;
+        border-bottom:5px solid red;
+        display: flex;
+        justify-content: space-around;
+    }
+    .navbar-img{
+        height: 30px;
+    }
+    .navbar-left{
+        display: flex;
+        float: left;
+        padding: 10px;
+    }
+    .navbar-img-two{
+        height: 40px;
+    }
+    .navbar-right{
+        display: none;
+    }
+    #hamburger-menu{
+        display: inline;
+        color:rgb(168, 168, 78);
+        margin-top: 20px;
+        cursor: pointer;
+    }
+
+    #hamburger-menu:hover{
+        color:white;
+    }
+}
+
+.home-one{
+    background-image: url("./images/home-section.webp");
+    background-repeat: no-repeat;
+    background-size:90% 700px;
+    height: 700px;
+    width:100%;
+}
+.home-span{
+    position: relative;
+    top:80px;
+    left:-380px;
+    font-size: 45px;
+    font-family:cursive;
+    animation-duration: 2s;
+  animation-name: slidein;
+  background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
+ -webkit-background-clip: text;
+  -webkit-text-fill-color:transparent;
+  font-weight: bold;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 400px;
+  }
+
+  to {
+    margin-left: -1px;
+  }
+}
+.home-two{
+    background-color: rgb(214, 238, 238);
+    width: 98.7%;
+    height: 400px;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+.home-two h2{
+    color: rgb(140, 48, 163);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px #f48fb1;
+}
+.section-grid{
+    margin-left: 50px;
+    border: 5px solid rgb(38, 38, 53);
+    cursor: pointer;
+}
+.home-two-a{
+    color: rgb(140, 48, 163);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5rem;
+    float: right;
+    margin-right: 2%;
+    cursor: pointer;
+}
+.home-three{
+    text-align: center;
+    height: 50px;
+    padding: 15px;
+    font-size: 2rem;
+    cursor: pointer;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: rgb(206, 202, 202);
+}
+.home-three a{
+    text-decoration: none;
+    color: rgb(51, 42, 42);
+}
+@media screen and (max-width: 767px) {
+    .home-span{
+        position: static;
+        animation: none;
+        font-size: 15px;
+    }
+    .home-one{
+        height: 250px;
+        background-size:contain;
+    }
+    .home-two {
+        height: auto; 
+        padding: 10px; 
+    }
+    .home-two h2{
+        font-size: 1.5rem;
+    }
+    .home-section-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; 
+    }
+
+    .section-grid {
+        width: calc(33.33% - 10px); 
+        margin-bottom: 10px; 
+        margin-left: 0%;
+    }
+    .home-two-a{
+        font-size: smaller;
+    }
+    .home-three{
+        text-align: center;
+        height: 30px;
+        padding: 15px;
+        font-size: 1.5rem;
+    }
+    .home-three a{
+        height: 30px;
+        text-decoration: none;
+        color: rgb(51, 42, 42);
+    }
+}
+
+
+
+
+
